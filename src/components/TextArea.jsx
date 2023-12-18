@@ -16,7 +16,7 @@ const TextArea = () => {
   };
 
   const handleRefetch = () => {
-    fetch("http://localhost:5001/tasks", {
+    fetch("https://task-manager-server-blue.vercel.app/tasks", {
       headers: {
         Authorization: getBearerToken(),
       },
@@ -53,7 +53,7 @@ const TextArea = () => {
         date: `${day}-${month}-${year}`,
         time: `${formatedHours}:${minutes} ${amOrPm}`,
       };
-      fetch("http://localhost:5001/tasks", {
+      fetch("https://task-manager-server-blue.vercel.app/tasks", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -94,7 +94,7 @@ const TextArea = () => {
   };
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:5001/tasks/${id}`, {
+    fetch(`https://task-manager-server-blue.vercel.app/tasks/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: getBearerToken(),
@@ -104,7 +104,7 @@ const TextArea = () => {
       .then((data) => {
         console.log(data);
         if (data.deletedCount > 0) {
-          fetch("http://localhost:5001/tasks", {
+          fetch("https://task-manager-server-blue.vercel.app/tasks", {
             headers: {
               Authorization: getBearerToken(),
             },
@@ -129,7 +129,7 @@ const TextArea = () => {
           await new Promise((resolve) => setTimeout(resolve, 200));
 
           const response = await fetch(
-            `http://localhost:5001/tasks?email=${user.email}`,
+            `https://task-manager-server-blue.vercel.app/tasks?email=${user.email}`,
             {
               headers: {
                 Authorization: getBearerToken(),
@@ -154,7 +154,7 @@ const TextArea = () => {
 
   return (
     <section className="text-center px-8 container mx-auto mt-6">
-      <div className="hidden lg:md:block">
+      <div className="">
         {user ? (
           <table className="table text-center">
             {/* head */}

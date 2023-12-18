@@ -19,7 +19,7 @@ const SignUp = () => {
         console.log(user);
         updateUserProfile(name).then(() => {
           const savedUser = { name: name, email: email };
-          fetch(`http://localhost:5001/users`, {
+          fetch(`https://task-manager-server-blue.vercel.app/users`, {
             method: "POST",
             headers: {
               "content-type": "application/json",

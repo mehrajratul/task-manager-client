@@ -47,7 +47,7 @@ const AuthProvider = ({ children }) => {
 
       //get and set the token
       if (currentUser) {
-        fetch(`http://localhost:5001/jwt`, {
+        fetch(`https://task-manager-server-blue.vercel.app/jwt`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

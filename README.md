@@ -5,12 +5,11 @@ Task Manager is a full-stack MERN (MongoDB, Express.js, React, Node.js) applicat
 Table of Contents
 1.Features
 2.Installation
-3.Usage
-4.Authentication
-5.Task Management
-6.Reviews
-7.Contributing
-8.Features
+3.Authentication
+4.Task Management
+5.Reviews
+6.Contributing
+7.Features
 
 User Authentication: Utilizes Firebase for secure email and password authentication.
 UI Design: Tailwind and Daisy UI are employed to create an aesthetically pleasing and intuitive user interface.
@@ -22,16 +21,11 @@ Review System: Users can provide feedback through the review feature, with revie
 
 Installation
 
-Clone the repository: git clone https://github.com/your-username/task-manager.git
+Clone the repository: git clone https://github.com/mehrajratul/task-manager-client
 Navigate to the project folder: cd task-manager
 Install dependencies for both the server and client: npm run install-all
 Set up Firebase credentials for authentication.
 
-Usage
-
-Start the server: npm run server
-Start the client: npm run client
-Visit http://localhost:3000 in your browser to access the Task Manager app.
 Authentication
 The app uses Firebase for user authentication.
 Users can sign up with their email and password.

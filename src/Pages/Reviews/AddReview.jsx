@@ -9,7 +9,7 @@ const AddReview = () => {
 
     const newReview = { name, rating, comment };
 
-    fetch("http://localhost:5001/review", {
+    fetch("https://task-manager-server-blue.vercel.app/review", {
       method: "POST",
       headers: {
         "content-type": "application/json",

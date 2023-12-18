@@ -22,7 +22,7 @@ const Tasks = ({
     const updatedTask = { task: job };
     console.log("updated Task", updatedTask);
 
-    fetch(`http://localhost:5001/tasks/${taskId}`, {
+    fetch(`https://task-manager-server-blue.vercel.app/tasks/${taskId}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",
